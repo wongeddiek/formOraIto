@@ -1,0 +1,217 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.ast{
+  color: #DC0000;
+  font-weight: bold;
+}
+
+#pageContainer{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#mainContainer{
+  display:flex;
+  flex-wrap: wrap-reverse;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#contact{
+  width: 100%;
+  text-align: center;
+  padding: 40px 30px;
+  margin: 0 auto;
+  font-size: 2.5em;
+}
+
+#contactTitle{
+  margin: 0;
+}
+
+#formContainer{
+  margin: 0 auto;
+  max-width: 680px;
+  padding-bottom: 35px;
+  flex: 1 2 680px;
+}
+
+.entryForm{
+
+}
+
+.entryRow{
+  width:auto;
+  /*margin-left: -40px;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*.entryRow:before{
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.entryRow:after{
+  content: " ";
+  display: block;
+  clear: both;
+}*/
+
+.entryBlock{
+  width: 300px;
+  /*float: left;*/
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
+
+.entryBlockBtn{
+  min-width: 0px;
+  width: auto;
+}
+
+.entryBlockFull{
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.formLabel, .formLabelBottom{
+  display: block;
+  margin: 0 0 10px 0;
+  color: #646464;
+  line-height: 30px;
+}
+
+.formLabelBottom{
+  margin: 0px;
+}
+
+.dropbox{
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.dropbox:hover{
+  background-color: #fbfafb;
+}
+
+input, textarea, select, option{
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  resize: none;
+}
+
+select, option{
+  height: 49px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus{
+  outline: none;
+  background-color: #fbfafb;
+}
+
+select:focus{
+  outline: none;
+}
+
+.formButton{
+  width:auto;
+  padding: 20px 38px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background: #f1f1f1;
+  transition: 1.5s;
+}
+
+.formButton:hover{
+  background: #646464;
+  color: #fff;
+  border-color: #646464;
+  outline: 0;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.btnWrap{
+  margin-top: 50px;
+}
+
+.sidebar{
+  width: 250px;
+  max-width: 680px;
+  flex: 1 1 170px;
+  margin: 0 auto;
+}
+
+.sidebarP{
+  margin-bottom: 30px;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.contactCo{
+  margin-top: 0;
+}
+
+.contactTel{
+}
+
+.hyperlinks{
+  color: #a4927d;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.hyperlinks:hover{
+  border-bottom: 1px solid #a4927d;
+}
+
+@media (max-width:696px) {
+  .entryRow{
+    justify-content: center;
+  }
+  .entryBlock, .entryBlockFull{
+    margin: 0px 20px 35px;
+  }
+  .entryBlockFull{
+    width: 300px;
+  }
+  .sidebarP{
+    text-align: center;
+  }
+}
+
+@media (max-width:866px) {
+  #formContainer{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0px;
+    margin-bottom: 35px;
+  }
+}

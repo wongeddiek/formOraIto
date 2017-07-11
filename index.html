@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- This is a project I worked on while learning how to create forms in HTML and CSS.
+I tried to replicate the contact form from this website - http://www.ora-ito.com/contact-2/ by creating
+everything from scratch using HTML and CSS without using any front end framework.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Ora-ïto</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/css/min/main-min.css">
+  </head>
+  <body>
+    <div id="pageContainer">
+      <header id="contact">
+        <div id="contactTitle">Contact</div>
+      </header>
+      <div id="mainContainer">
+        <aside class="sidebar">
+          <p class="contactCo sidebarP">
+            <strong>Ora ïto Studios</strong><br>
+            9 rue d’Aboukir<br>
+            75002 Paris<br>
+            France
+          </p>
+          <p class="contactTel sidebarP">T +33 1 42 46 00 09</p>
+          <p class="sidebarP"><a class="hyperlinks" href="https://goo.gl/maps/k2WJ3" target="_blank">Google Map</a></p>
+        </aside>
+        <div id="formContainer">
+          <form class="entryForm" action="index.html" method="post">
+            <div class="entryRow">
+              <div class="entryBlock">
+                <label class="formLabel" for="firstname">First name <span class="ast">*</span></label>
+                <input type="text" name="firstname" value="">
+              </div>
+              <div class="entryBlock">
+                <label class="formLabel" for="lastname">Last name <span class="ast">*</span></label>
+                <input type="text" name="lastname" value="">
+              </div>
+            </div>
+            <div class="entryRow">
+                <div class="entryBlock">
+                  <label class="formLabel" for="emailaddress">Email <span class="ast">*</span></label>
+                  <input type="email" name="emailaddress" value="">
+                </div>
+                <div class="entryBlock">
+                  <label class="formLabel" for="phonenumber">Phone number</label>
+                  <input type="tel" name="phonenumber" value="">
+                </div>
+            </div>
+            <div class="entryRow">
+                <div class="entryBlock">
+                  <label class="formLabel" for="subject">Subject <span class="ast">*</span></label>
+                  <div class="dropbox">
+                      <select name="subject">
+                        <option value="">Select</option>
+                        <option value="pressinquiries">Press inquiries</option>
+                        <option value="jointeam">Join our team</option>
+                        <option value="websitefeedback">Feedback on this website</option>
+                        <option value="other">Other</option>
+                      </select>
+                  </div>
+                </div>
+            </div>
+            <div class="entryRow">
+                <div class="entryBlockFull">
+                  <label class="formLabel" for="message">Message <span class="ast">*</span></label>
+                  <textarea name="message" rows="10" cols="40"></textarea>
+                </div>
+            </div>
+            <div class="entryRow">
+                <div class="entryBlock">
+                  <label class="formLabelBottom" for="human">We need to verify you are human <span class="ast">*</span></label>
+                  <label class="formLabel" for="human">How much is 8 + 1 ?</label>
+                  <input type="text" name="human" size="40">
+                </div>
+            </div>
+            <div class="entryRow btnWrap">
+                <div class="entryBlock entryBlockBtn">
+                  <input class="formButton" type="Submit">
+                </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
